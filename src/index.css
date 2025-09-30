@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #F5F1E8;
+    color: #4A5D23;
+  }
+}
+
+@layer components {
+  .vintage-button {
+    @apply bg-vintage-green text-warm-beige px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-vintage-green/80 hover:shadow-vintage-lg transform hover:-translate-y-1;
+  }
+  
+  .vintage-card {
+    @apply bg-warm-beige rounded-xl shadow-vintage transition-all duration-300 hover:shadow-vintage-lg hover:-translate-y-2;
+  }
+  
+  .vintage-text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16;
+  }
+  
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+
+  /* Custom Swiper Styling */
+  .hero-swiper {
+    height: 100vh;
+  }
+
+  .hero-swiper .swiper-slide {
+    position: relative;
+  }
+
+  /* Custom Pagination Bullets */
+  .swiper-pagination-bullet-vintage {
+    @apply w-3 h-3 bg-warm-beige/50 rounded-full transition-all duration-300;
+  }
+
+  .swiper-pagination-bullet-active-vintage {
+    @apply bg-warm-beige scale-125;
+  }
+
+  /* Custom Navigation Buttons */
+  .swiper-button-prev-vintage,
+  .swiper-button-next-vintage {
+    @apply opacity-70 hover:opacity-100 transition-opacity duration-300;
+  }
+
+  .swiper-button-prev-vintage:after,
+  .swiper-button-next-vintage:after {
+    display: none;
+  }
+
+  /* Hide default pagination and navigation */
+  .hero-swiper .swiper-pagination {
+    display: none;
+  }
+
+  .hero-swiper .swiper-button-next,
+  .hero-swiper .swiper-button-prev {
+    display: none;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .swiper-button-prev-vintage,
+    .swiper-button-next-vintage {
+      @apply w-10 h-10;
+    }
+    
+    .swiper-button-prev-vintage svg,
+    .swiper-button-next-vintage svg {
+      @apply w-5 h-5;
+    }
+  }
+}
