@@ -1,0 +1,20 @@
+{
+  "name": "Zenttech Coffee - Hương vị của ký ức",
+  "short_name": "Zenttech Coffee",
+  "description": "Thưởng thức không gian xưa, đậm đà vị cà phê Việt. Hơn 70 năm gìn giữ hương vị cà phê truyền thống Việt Nam.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F1E8",
+  "theme_color": "#4A5D23",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/coffee-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "lifestyle", "business"],
+  "lang": "vi"
+}
